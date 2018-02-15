@@ -82,6 +82,7 @@ articleView.setTeasers = function() {
 // TODO: Call all of the above functions, once we are sure the DOM is ready.
 $(document).ready(function() {
   articleView.populateFilters(this.authorName);
+})
   
   $('select[name="author-filter"]').on('change', function() {
     let $selection = $(this).val();
@@ -91,4 +92,4 @@ $(document).ready(function() {
   // $('article').hide();
  
   });
-// })
+

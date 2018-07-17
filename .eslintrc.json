@@ -11,7 +11,9 @@
   "extends": "eslint:recommended",
   "parserOptions": {
     "ecmaVersion": 6,
-    "ecmaFeatures": {"impliedStrict": true}
+    "ecmaFeatures": {
+      "impliedStrict": true
+    }
   },
   "env": {
     "browser": true,
@@ -24,12 +26,39 @@
     "no-undefined": "off",
     "new-cap": "warn",
     "no-trailing-spaces": "warn",
-    "quotes": ["warn", "single", {"allowTemplateLiterals": true}],
-    "no-multi-spaces": ["warn", {"exceptions": {"VariableDeclarator": true}}],
+    "quotes": [
+      "warn",
+      "single",
+      {
+        "allowTemplateLiterals": true
+      }
+    ],
+    "no-multi-spaces": [
+      "warn",
+      {
+        "exceptions": {
+          "VariableDeclarator": true
+        }
+      }
+    ],
     "no-template-curly-in-string": "error",
-    "eqeqeq": ["error", "always"],
-    "semi": ["error", "always"],
-    "indent": ["error", 2],
-    "no-redeclare": ["error", {"builtinGlobals": true}]
+    "eqeqeq": [
+      "error",
+      "always"
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "indent": [
+      "error",
+      2
+    ],
+    "no-redeclare": [
+      "error",
+      {
+        "builtinGlobals": true
+      }
+    ]
   }
 }

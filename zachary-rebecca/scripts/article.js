@@ -2,14 +2,14 @@
 
 let articles = [];
 
-function Article (rawDataObj) {
+Article = (rawDataObj) => {
   this.author = rawDataObj.author;
   this.authorUrl = rawDataObj.authorUrl;
   this.title = rawDataObj.title;
   this.category = rawDataObj.category;
   this.body = rawDataObj.body;
   this.publishedOn = rawDataObj.publishedOn;
-}
+};
 
 Article.prototype.toHtml = function() {
   let $newArticle = $('article.template').clone();
